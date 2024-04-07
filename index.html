@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GSF Testing</title>
@@ -8,46 +9,62 @@
     padding: 0;
     font-family: comic sans;
     background-color: #7F3A5F; /* Change background color to light gray */
-  } 
-    
+  }
+
+  .banner {
+    background-color: #55243E; /* Blank background */
+    color: white; /* White text */
+    padding: 5px 0; /* Add some padding */
+    text-align: center; /* Center the text */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); /* Add a 2px shadow */
+  }
+
+  .menu-bar {
+    background-color: #333; /* Dark background color for the menu bar */
+    overflow: hidden;
+  }
+
+  .menu-bar a {
+    float: left;
+    display: block;
+    color: #A8A8A8; /* Change text color to light gray */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .menu-bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
   /* Media query for mobile devices */
   @media only screen and (max-width: 600px) {
     .banner {
       padding: 20px 0; /* Increase padding for smaller screens */
       font-size: 18px; /* Decrease font size for smaller screens */
     }
-      .menu-bar a {
-    float: left;
-    display: block;
-    color: #A8A8A8; /* Change text color to white */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .banner {
-    background-color: #55243E; /* blank background */
-    color: white; /* White text */
-    padding: 5px 0; /* Add some padding */
-    text-align: center; /* Center the text */
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); /* Add a 2px shadow */
+
+    .menu-bar a {
+      color: white; /* Change text color to white for better visibility */
+    }
   }
 </style>
-<style type="text/css" id="operaUserStyle"></style></head>
+</head>
 <body>
 
 <div class="banner">
   <h2>Welcome to GSF Testing</h2>
   <p>I wanna eat a car right now!</p>
+</div>
 
 <div class="menu-bar">
   <a href="#">Home</a>
   <a href="#">About</a>
   <a href="https://www.rabslabs.xyz">Back to Rab's Labs</a>
- <a href="https://up.rabslabs.xyz">United Pogonia</a>
+  <a href="https://up.rabslabs.xyz">United Pogonia</a>
   <a href="https://bean.rabslabs.xyz">Bean Studios</a>
+</div>
 
-
-
-
-</div></div>
-</body></html>
+</body>
+</html>
