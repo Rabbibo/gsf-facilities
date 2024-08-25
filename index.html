@@ -16,7 +16,7 @@
             background-color: #960085;
             color: #960085;
             padding: 20px;
-            text-align: center;
+            text-align: corner;
             background: linear-gradient(120deg, #18627F, #960085);
         }
         nav {
@@ -83,7 +83,14 @@
             text-align: center;
             clear: both;
         }
-
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: -5px; /* Distance from the top */
+    left: 10px; /* Distance from the right */
+    z-index: 1000; /* Ensures the logo appears above other content */
+}
         /* Responsive Design */
         @media (max-width: 768px) {
             .grid {
@@ -104,7 +111,7 @@
 </head>
 <body>
     <header> 
-        <img src="GSF-Testing_chromeV.jpg" alt="GSF-Testing-Logo" class="logo">
+        <img class="logo" alt="GSF-Testing-Logo" src="gsf.png" size="5px">
     </header>
     <nav>
         <a href="https://gerld.rabslabs.xyz">Home</a>
@@ -131,6 +138,7 @@
     <footer>
         <p>© 2024 GSF Testing. All rights reserved.</p>
     </footer>
+
 
 
 </body></html>
