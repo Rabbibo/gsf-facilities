@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSF Testing ᴿᴸ</title>
@@ -10,8 +11,7 @@
             font-family: 'Comic Sans MS', cursive, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #7F3A5F
-        ;
+            background-color: #7F3A5F;
         }
         header {
             background-color: #960085;
@@ -35,7 +35,7 @@
             background-color: #659FB9;
         }
         .container {
-            width: 80%;
+            width: 90%; /* Slightly increase width for better mobile view */
             margin: auto;
             overflow: hidden;
             padding: 20px;
@@ -43,7 +43,7 @@
         .grid {
             display: grid;
             gap: 20px;
-            grid-template-columns: 2fr 1fr; /* Box 1 takes 2 times the width of Box 2 */
+            grid-template-columns: 2fr 1fr; /* Default layout for larger screens */
         }
         .main-content {
             background-color: #535353;
@@ -84,12 +84,28 @@
             text-align: center;
             clear: both;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr; /* Stack columns on top of each other */
+            }
+            nav {
+                font-size: 14px; /* Smaller font size for mobile navigation */
+            }
+            .container {
+                width: 100%; /* Full width for smaller screens */
+            }
+            .main-content, .sidebar {
+                padding: 15px; /* Reduced padding for better mobile view */
+            }
+        }
     </style>
-<style type="text/css" id="operaUserStyle"></style></head>
+    <style type="text/css" id="operaUserStyle"></style>
+</head>
 <body>
     <header> 
-        <img src="GSF-Testing_chromeV.jpg" alt="GSF-Testing-Logo
-        " class="logo">
+        <img src="GSF-Testing_chromeV.jpg" alt="GSF-Testing-Logo" class="logo">
     </header>
     <nav>
         <a href="https://gerld.rabslabs.xyz">Home</a>
@@ -112,12 +128,9 @@
                 </ul>
             </div>
         </div>
-        
     </div>
     <footer>
         <p>© 2024 GSF Testing. All rights reserved.</p>
     </footer>
-
-
-
-</body></html>
+</body>
+</html>
