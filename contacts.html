@@ -64,6 +64,29 @@
             text-align: center;
             clear: both;
         }
+        .logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: -5px; /* Distance from the top */
+    left: 10px; /* Distance from the right */
+    z-index: 1000; /* Ensures the logo appears above other content */
+}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr; /* Stack columns on top of each other */
+            }
+            nav {
+                font-size: 14px; /* Smaller font size for mobile navigation */
+            }
+            .container {
+                width: 100%; /* Full width for smaller screens */
+            }
+            .main-content, .sidebar {
+                padding: 15px; /* Reduced padding for better mobile view */
+            }
+        }
     </style>
 <style type="text/css" id="operaUserStyle"></style></head>
 <body>
