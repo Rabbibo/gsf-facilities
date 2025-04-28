@@ -1,108 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GSF Testing Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
-      background: linear-gradient(to bottom, #3a3a7a, #8a3a7a);
-      color: #d3d3d3;
-    }
-
-    header {
-      background-color: #444;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-
-    header button {
-      background: #777;
-      border: none;
-      padding: 10px 20px;
-      margin: 0 10px;
-      font-size: 1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      color: white;
-    }
-
-    header button:hover {
-      background-color: #999;
-    }
-
-    .main {
-      background-color: #333;
-      margin: 30px auto;
-      padding: 20px;
-      width: 80%;
-      border-radius: 20px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .text-section {
-      flex: 1;
-      margin-right: 20px;
-    }
-
-    .text-section h1, .text-section h2 {
-      margin-top: 0;
-    }
-
-    .video-section {
-      flex: 1;
-      background-color: black;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: gray;
-      min-height: 200px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-  </style>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSF Testing ᴿᴸ</title>
+    <link rel="stylesheet" href="styles.css"> <!-- If you have an external stylesheet -->
+    <link rel="shortcut icon" type="image/png" href="Circle Domain profile.png"> <!-- Add this line for favicon -->
+    <style>
+        /* Internal CSS can also be used */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #7F3A5F;
+        }
+        header {
+            background-color: #960085;
+            color: #960085;
+            padding: 20px;
+            text-align: corner;
+            background: linear-gradient(120deg, #18627F, #960085);
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #659FB9;
+        }
+        .container {
+            width: 90%; /* Slightly increase width for better mobile view */
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 2fr 1fr; /* Default layout for larger screens */
+        }
+        .main-content {
+            background-color: #535353;
+            padding: 20px;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .sidebar {
+            background-color: #535353;
+            padding: 20px;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .see-more {
+            clear: both;
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .see-more a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #FFF;
+            background-color: #535353;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .see-more a:hover {
+            background-color: #ffffff;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+        }
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 0px; /* Distance from the top */
+    left: 10px; /* Distance from the right */
+    z-index: 1000; /* Ensures the logo appears above other content */
+}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr; /* Stack columns on top of each other */
+            }
+            nav {
+                font-size: 14px; /* Smaller font size for mobile navigation */
+            }
+            .container {
+                width: 100%; /* Full width for smaller screens */
+            }
+            .main-content, .sidebar {
+                padding: 15px; /* Reduced padding for better mobile view */
+            }
+        }
+    </style>
+    <style type="text/css" id="operaUserStyle"></style>
 </head>
 <body>
-
-<header>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="https://www.rabslabs.xyz">To Rab's Labs</a>
+    <header> 
+        <img class="logo" alt="GSF-Testing-Logo" src="gsf.png" size="5px">
+    </header>
+    <nav>
+        <a href="https://www.rabslabs.xyz/gsf-facilities/index.html">Home</a>
+        <a href="https://www.rabslabs.xyz/gsf-facilities//contacts.html">Contacts</a>
+        <a href="https://www.rabslabs.xyz/gsf-facilities//portfolio.html">Portfolio</a>
+        <a href="https://www.rabslabs.xyz/">To Rab's Labs</a>
     </nav>
-</header>
+    <div class="container">
+        <div class="grid">
+            <div class="main-content">
+                <h2>About Us</h2>
+                <p>Welcome to GSF Testing, where 3 people who have no idea what they're doing do stupid experiments and surviving. Creating things that nobody needs nor wants.</p>
+            </div>
+            <div class="sidebar">
+                <h3>Latest News</h3>
+                <ul>
+                    <li>The site has been redesigned!</li>
+                    <li>New page has (almost) been set up!</li>
+                    <li>Join us futher into the future for more projects!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<div class="main">
-  <div class="text-section">
-    <h1>Welcome to GSF Testing Website!</h1>
-    <h2>Change logs</h2>
-    <ul>
-      <li>1. Redesign of the UI</li>
-      <li>2. New projects coming</li>
-    </ul>
+    <footer>
+        <header>
+        <p>© 2025 GSF Testing. All rights reserved.</p>
+        </header>
+    <style>
+        header {
+            background: linear-gradient(120deg, #18627F, #960085);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+    </style>
 
-    <h2>Description</h2>
-    <p>3 people who have no idea what they're doing do stupid experiments and survive. 
-       Creating things that nobody needs nor wants.</p>
-  </div>
-
-  <div class="video-section">
-    Code for an imported video
-  </div>
-</div>
-
-</body>
-</html>
+</body></html
